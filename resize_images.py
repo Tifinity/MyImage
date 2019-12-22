@@ -16,7 +16,7 @@ def convert(src, outdir, nw=840):
     except Exception as e:
         print(e)
 
-outdir = r"D:\TH\MyImage\Unity3D\hw11"
+outdir = r"D:\TH\MyImage\AI-Learning\hw4"
 
 for src in glob.glob(outdir + "/*.png"):
     convert(src, outdir)
