@@ -2,7 +2,7 @@ from PIL import Image
 import os.path
 import glob
 
-def convert(src, outdir, nw=600):
+def convert(src, outdir, nw=840):
     img = Image.open(src)
     w, h = img.size
     print(w,h)
@@ -16,7 +16,7 @@ def convert(src, outdir, nw=600):
     except Exception as e:
         print(e)
 
-outdir = r"D:\TH\MyImage\WebSecurity\hw1DES"
+outdir = r"D:\TH\MyImage\Unity3D\hw11"
 
 for src in glob.glob(outdir + "/*.png"):
     convert(src, outdir)
